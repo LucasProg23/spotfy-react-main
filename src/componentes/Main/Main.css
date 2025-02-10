@@ -1,0 +1,272 @@
+
+main {
+    background-color:#121212;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    color:#b3b3b3;
+    font-weight: 600;
+    font-size:14px;
+    margin: 72px 310px 420px 325px;
+    height: 712px;
+    position: relative;
+}
+
+.destacks_model {
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(0, 93, 60, 0.5), transparent);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 0;
+
+}
+
+main .main_content {
+    padding: 56px 40px 0 40px;
+    gap: 20px;
+}
+
+main .main_content div {}
+
+.destacks_header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 10px;
+    position: fixed;
+    top: 72px;
+    width: calc(100% - 635px);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    z-index: 2;
+}
+
+.destacks_header button {
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #353535;
+    color: #fff;
+}
+
+.destacks_header button:hover {
+    cursor: pointer;
+    background-color: #7a7a7a;
+}   
+
+.destacks_header #btn1 {    
+    background-color: #fff;
+    color: #000;
+}
+
+.destacks_container {
+    height: 216px;
+}
+
+.destacks_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    gap: 10px;
+}
+
+.destacks_content .card {
+    height: 48px;
+    display: flex;  
+    align-items: center;
+    border: none;
+    gap: 10px;
+    border-radius: 8px;
+    background-color: #5555557a;
+    color: #fff;
+    z-index: 1;
+}
+
+.destacks_content .card:hover {
+    cursor: pointer;
+    background-color: #4b4b4b;
+}
+
+.destacks_content .card img {
+    height: 48px;
+    width: 48px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.player_list {
+    margin-top: 40px;
+}
+
+#Recently_played {
+    height: 236px;
+    color: #fff;
+}
+
+.albuns_list_top {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.albuns_list_top h1 {
+    font-size: 1.3rem;
+}
+
+.albuns_list_top h1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.albuns_list_top button {
+    background-color: transparent;
+    color: #b3b3b3;
+    border: none;
+} 
+
+.albuns_list_top button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Recently_played_list_cards {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.Recently_played_list_cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    font-size: .9rem;
+    width: 133px;
+    height: 180px;
+    background-color: transparent;
+    border: none;
+    color: #dddddd;
+    text-align: left;
+    padding: 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.Recently_played_list_cards .card img {
+    height: 109px;
+    width: 109px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.Recently_played_list_cards .card:hover {
+    cursor: pointer;
+    background-color: #353535;
+}
+
+.albuns_list {
+    height: 284px;
+}
+
+.albuns_list_cards {
+    height: 238px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.albuns_list_cards .card {
+    width: 177px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    color: #898989;
+    gap: 10px;
+    text-align: left;
+}
+
+.albuns_list_cards .card div h1 {
+    color: #d4d4d4;
+    font-size: 1rem;
+}
+
+.albuns_list_cards .card div h4 {
+    margin-top: 10px;
+}
+
+.albuns_list_cards .card:hover {
+    cursor: pointer;
+    background-color: #353535;
+}
+
+.albuns_list_cards .card img {
+    height: 154px;
+    width: 154px;
+    border-radius: 8px;
+}
+
+#your_favorite_artists .albuns_list_cards .card img{
+    border-radius: 100%;
+}
+
+.research_not_founded {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+/* #################################################################################################### */
+
+.Recently_played_list_cards::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .Recently_played_list_cards::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+  
+  .Recently_played_list_cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  .Recently_played_list_cards::-webkit-scrollbar-thumb:hover {
+    background: #aeaeae;
+  }
+
+/* #################################################################################################### */
+
+.albuns_list_cards::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .albuns_list_cards::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+  
+  .albuns_list_cards::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  .albuns_list_cards::-webkit-scrollbar-thumb:hover {
+    background: #aeaeae;
+  }
